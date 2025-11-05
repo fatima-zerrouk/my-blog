@@ -1,0 +1,13 @@
+.section-card {
+    padding: 2em;
+    width: 12.5em;
+}
+.img-card{
+    border-radius: .2em;
+    margin-bottom: 1em;
+}
+.h2-card,
+.h3-card,
+.p-card {
+     margin-bottom: .5em;
+}

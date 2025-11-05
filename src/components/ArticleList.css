@@ -1,0 +1,24 @@
+
+.title-article{
+    margin: 1.8em;
+    text-align: center;
+}
+.h2-article{
+    margin: 1em;
+    margin-left: 2.5em;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    /* grid-column-gap: 0px;
+    grid-row-gap: 0px; */
+
+    justify-items: center;
+
+/* ça marche aussi mais je ne pense pas que se soit la bonne marche a suivre */
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+
+}

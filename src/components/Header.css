@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.all-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(24, 23, 23);
+    padding: 2em ;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.ul-header{
+    display: flex;
+    gap: 1em;
+}
+.a-header{
+    color: white;
+    font-size: large;
+}
+.a-header:hover{
+    color: #1191b4;
+    transition: ease-in-out 0.4s;
+}
+
+.title-header{
+    color: white;
+}
