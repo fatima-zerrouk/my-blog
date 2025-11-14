@@ -1,4 +1,3 @@
-// import { createRoot } from 'react-dom/client';
 import './Header.css';
 
 function Header() {
@@ -8,16 +7,15 @@ function Header() {
     return (
         <header className='all-header'>
             <h1 className='title-header'>Titre</h1>
-            <nav className='nav-header'>
+            <nav className='nav-header' aria-label='Barre de navigation principale'>
                 <ul  className='ul-header'> 
                 <li><a href="#" className='a-header'>Accueil</a></li>
                 <li><a href="#" className='a-header'>Articles</a></li>
                 <li><a href="#" className='a-header'>Contact</a></li>
-                <li><a href="#" className='a-header'>Me connecter</a></li>
-                </ul>   
-                {/* <button>Me connecter</button> */}
+                </ul>
+                <button className='button-header' type='button'>Me connecter</button>
+
             </nav>
-            {/* <h2>Bienvenue sur mon blog</h2> */}
         </header>   
     );
 }

@@ -1,13 +1,21 @@
 .section-card {
-    padding: 2em;
+    padding: 1.5em;
     width: 12.5em;
+    border: .2em solid, #4d3a44;
+    border-radius: .5em;
+    margin-bottom: 4em;
 }
 .img-card{
     border-radius: .2em;
     margin-bottom: 1em;
 }
 .h2-card,
-.h3-card,
-.p-card {
+.p-card,
+.p-date {
      margin-bottom: .5em;
 }
+.button-like{
+    border: none;
+    font-size:2em;
+}
+

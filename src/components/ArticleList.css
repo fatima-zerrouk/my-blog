@@ -1,24 +1,45 @@
-
 .title-article{
-    margin: 1.8em;
+    margin: .5em;
     text-align: center;
+    /* color: #4d3a44; */
 }
 .h2-article{
-    margin: 1em;
+    margin: 3em;
     margin-left: 2.5em;
 }
-.parent {
+.parent { 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* grid-template-rows: repeat(2, 1fr); */
     /* grid-column-gap: 0px;
     grid-row-gap: 0px; */
-
     justify-items: center;
+    margin: 2em;
+}
 
-/* ça marche aussi mais je ne pense pas que se soit la bonne marche a suivre */
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; */
+/* search bar */
+label {
+    display: none;
+}
+.search-button{
+    border: none;
+    padding: .7em;
+    border-radius: .5em;
+    color: white;
+    background-color:  #74565b;;
+    cursor: pointer; 
+}
 
+#search{
+    padding: 1em;
+    width: 50%;
+    border: solid;
+    border-radius: 2em;
+
+}
+#form-search{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5em;
 }
