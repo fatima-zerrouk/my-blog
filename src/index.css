@@ -81,4 +81,8 @@ button:focus-visible {
     color: #372626;
   }
 }
+.error-404{
+  margin-top: 15%;
+  text-align: center;
+}
 

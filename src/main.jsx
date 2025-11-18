@@ -2,11 +2,12 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
+import { BrowserRouter } from 'react-router-dom'//le router est une bibliothèque qui fournit des fonctionnalités de routage
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* mettre le broserrooter ici */}
-    <App />
-    {/* a ici */}
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </StrictMode>,
 )
