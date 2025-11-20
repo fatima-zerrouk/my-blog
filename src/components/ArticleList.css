@@ -18,7 +18,7 @@
 }
 
 /* search bar */
-label {
+label.search-label {
     display: none;
 }
 .search-button{

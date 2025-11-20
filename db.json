@@ -1,7 +1,7 @@
 {
   "articles": [
     {
-      "id": 1,
+      "id": "1",
       "title": "ouiii😭🤧🥳",
       "content": "Voici le contenu de l'article.",
       "image": "https://placehold.co/200x200",
@@ -11,7 +11,7 @@
       "categoryName": "React"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Titre 2😁",
       "content": "Voici le contenu de l'article.",
       "image": "https://placehold.co/200x200",
@@ -21,7 +21,7 @@
       "categoryName": "React"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Titre 3",
       "content": "Voici le contenu de l'article.",
       "image": "https://placehold.co/200x200",
@@ -31,7 +31,7 @@
       "categoryName": "React"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Titre 4",
       "content": "Voici le contenu de l'article.",
       "image": "https://placehold.co/200x200",
@@ -41,7 +41,7 @@
       "categoryName": "React"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Titre 5",
       "content": "Voici le contenu de l'article.",
       "image": "https://placehold.co/200x200",
@@ -51,7 +51,7 @@
       "categoryName": "React"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Titre 6",
       "content": "Voici le contenu de l'article.",
       "image": "https://placehold.co/200x200",
@@ -61,7 +61,7 @@
       "categoryName": "React"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Titre 7",
       "content": "Voici le contenu de l'article.",
       "image": "https://placehold.co/200x200",
@@ -71,7 +71,7 @@
       "categoryName": "React"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Titre 8",
       "content": "Voici le contenu de l'article.",
       "image": "https://placehold.co/200x200",

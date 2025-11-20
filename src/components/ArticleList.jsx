@@ -56,7 +56,7 @@ function ArticleList() {
             <h2 className="h2-article" id="article-list-title">Article populaires</h2>
             {/* RECHERCHE */}
             <form id="form-search" onSubmit={(e) => e.preventDefault()}>
-                <label htmlFor="search">Recherche</label>
+                <label htmlFor="search" className="search-label">Recherche</label>
                 <input type="search" name="search" id="search" onChange={handleSearchChange} placeholder="Rechercher un article" aria-label="Barre de recherche" />
             </form>
             {/* FIN RECHERCHE */}
