@@ -45,7 +45,6 @@ function ArticleList() {
     const handleSearchChange = (event) => { // Fonction appelée à chaque modif de la recherche
         setQSearchTerm(event.target.value) //met à jour le state setQSearchTerm
     }
-    console.log(searchTerm);
 
     return (
         // aria-labelledby="article-list-title" se lie au h2 avec le même id pour que le lecteur d’écran annoncent le contenu du h2

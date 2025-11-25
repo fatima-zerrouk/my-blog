@@ -1,9 +1,12 @@
-.section-card {
+.section-card{
+    display: flex;
     padding: 1.5em;
-    width: 12.5em;
+    width: 88%;
+    height: 80%;
     border: .2em solid, #4d3a44;
     border-radius: .5em;
     margin-bottom: 4em;
+    flex-direction: column;
 }
 .img-card{
     border-radius: .2em;
@@ -17,5 +20,6 @@
 .button-like{
     border: none;
     font-size:2em;
+    display: flex;
 }
 

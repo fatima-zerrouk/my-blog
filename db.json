@@ -1,24 +1,19 @@
 {
   "articles": [
     {
-      "id": "1",
-      "title": "ouiii😭🤧🥳",
+      "title": "Titre 1",
       "content": "Voici le contenu de l'article.",
+      "createdAt": "2025-11-25T14:46:49.509Z",
       "image": "https://placehold.co/200x200",
-      "createdAt": "2025-11-17T00:00:00.000Z",
-      "isPublished": false,
-      "likeCount": 0,
-      "categoryName": "React"
+      "updatedAt": "2025-11-25T14:46:54.533Z",
+      "id": "1"
     },
     {
-      "id": "2",
-      "title": "Titre 2😁",
+      "title": "Titre 2",
       "content": "Voici le contenu de l'article.",
+      "createdAt": "2025-11-21T10:36:11.679Z",
       "image": "https://placehold.co/200x200",
-      "createdAt": "2025-11-17T00:00:00.000Z",
-      "isPublished": false,
-      "likeCount": 0,
-      "categoryName": "React"
+      "id": "2"
     },
     {
       "id": "3",
@@ -61,14 +56,12 @@
       "categoryName": "React"
     },
     {
-      "id": "7",
-      "title": "Titre 7",
+      "title": "Titre 2",
       "content": "Voici le contenu de l'article.",
+      "createdAt": "2025-11-25T14:42:33.779Z",
       "image": "https://placehold.co/200x200",
-      "createdAt": "2025-11-17T00:00:00.000Z",
-      "isPublished": false,
-      "likeCount": 0,
-      "categoryName": "React"
+      "updatedAt": "2025-11-25T14:42:55.858Z",
+      "id": "7"
     },
     {
       "id": "8",
