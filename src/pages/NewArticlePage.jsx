@@ -7,6 +7,7 @@ function NewArticlePage() {
     return (
         <>
           {/* <ToastContainer /> */}
+          <h2 className='form-h2'>Ajouter un article</h2>
         <FormNewArticle/>
         </>
     );

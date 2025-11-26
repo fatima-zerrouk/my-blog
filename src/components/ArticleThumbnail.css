@@ -1,8 +1,7 @@
 .section-card{
     display: flex;
     padding: 1.5em;
-    width: 88%;
-    height: 80%;
+    width: 80%;
     border: .2em solid, #4d3a44;
     border-radius: .5em;
     margin-bottom: 4em;
@@ -21,5 +20,12 @@
     border: none;
     font-size:2em;
     display: flex;
+}
+.h2-card,
+.p-card{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 10rem;
 }
 

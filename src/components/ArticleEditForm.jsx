@@ -3,7 +3,7 @@ import { useEffect, useState} from "react";
 import { toast, ToastContainer } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
-// import './FormNewArticle.css';
+import './FormNewArticle.css';
 
 function ArticleEditForm() {
     const { id } = useParams(); 
@@ -53,17 +53,21 @@ function ArticleEditForm() {
 if (isLoading) return <p>Chargement</p>;
 
     return (
-        <section>
+        <section className="add-section">
 
-            <form onSubmit={handleSubmit}>
+            <form className="add-form" onSubmit={handleSubmit}>
                 <label htmlFor="add-title">Titre</label>
-                <input type="text" id="add-title" name="add-title" value={editArticle.title} onChange={(event) =>
+                <input type="text" id="add-title" name="add-title" required minLength="5" placeholder="Modifier le titre" value={editArticle.title} onChange={(event) =>
                     setEditArticle({ ...editArticle,title: event.target.value})} />
 
                 <label htmlFor="add-content">Contenu</label>
-                <textarea id="add-content" name="add-content" value={editArticle.content} onChange={(event) =>
+                <textarea id="add-content" name="add-content"  required minLength="5" rows="15" cols="50" placeholder="Modifier le contenu" value={editArticle.content} onChange={(event) =>
                     setEditArticle({ ...editArticle, content: event.target.value})} />
-                <button>Modifier l'article</button>
+
+                <label htmlFor="add-upload">Modifier l'image</label>
+                <input type="file" name="add-upload" id="add-upload" />
+
+                <button className="add-button">Modifier l'article</button>
             </form>
         </section>
     );

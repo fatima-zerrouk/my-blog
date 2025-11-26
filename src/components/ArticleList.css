@@ -1,7 +1,6 @@
 .title-article{
     margin: .5em;
     text-align: center;
-    /* color: #4d3a44; */
 }
 .h2-article{
     margin: 3em;
@@ -10,9 +9,7 @@
 .parent { 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* grid-template-rows: repeat(2, 1fr); */
-    /* grid-column-gap: 0px;
-    grid-row-gap: 0px; */
+
     justify-items: center;
     margin: 2em;
 }

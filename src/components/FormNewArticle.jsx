@@ -46,25 +46,20 @@ function FormNewArticle() {
     if (isLoading) return <p>Chargement</p>; 
     return (
         
-        <section>
-          
-            <h1>Ajouter un article</h1>
-            <form onSubmit={handleSubmit}>
+        <section className="add-section">
+            <form className="add-form" onSubmit={handleSubmit}>
                 <label htmlFor="add-title">Titre</label>
-                <input type="text" id="add-title" name="add-title" value={newArticle.title} onChange={(event) =>
+                <input type="text" id="add-title" name="add-title"  required minLength="5"  placeholder="Ajouter un titre" value={newArticle.title} onChange={(event) =>
                     setNewArticle({ ...newArticle,title: event.target.value})} />
 
                 <label htmlFor="add-content">Contenu</label>
-                <textarea id="add-content" name="add-content" value={newArticle.content} onChange={(event) =>
+                <textarea id="add-content" name="add-content" required minLength="5" rows="15" cols="50" placeholder="Ajouter le contenu" value={newArticle.content} onChange={(event) =>
                     setNewArticle({ ...newArticle, content: event.target.value})} />
 
-                {/* <label htmlFor="add-date">Date</label>
-                <input type="date" name="add-date" id="add-date" value={newArticle.createdAt} onChange={(event) => 
-                    setNewArticle({ ...newArticle,createdAt: event.target.value})}/> 
                 <label htmlFor="add-upload">Télécharger une image</label>
-                <input type="file" name="add-upload" id="add-upload"/> */}
+                <input type="file" name="add-upload" id="add-upload" />
 
-                <button>Ajouter l'article</button>
+                <button className="add-button">Ajouter l'article</button>
             </form>
         </section>
     );

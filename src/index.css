@@ -71,13 +71,13 @@ button:focus-visible {
 @media (prefers-color-scheme: dark) {
   * {
     background-color: #372626;
-    color: #dbc8c8;
+    color: #e7d1c9;
   }
 }
 
 @media (prefers-color-scheme: light) {
   * {
-    background-color: #c7a99d;
+    background-color: #e7d1c9;
     color: #372626;
   }
 }

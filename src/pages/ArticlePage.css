@@ -1,0 +1,38 @@
+.section-page{
+    display: flex;
+    justify-content: center;
+}
+.article-page{
+    border: .2em solid, #4d3a44;
+    margin: 2rem;
+    padding: 2rem;
+    width: 100%;
+}
+.figure-page{
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap: 5rem;
+}
+.butto-update-article,
+.button-delete-article{
+    margin-top: 2rem;
+    border: none;
+    padding: .7em;
+    border-radius: .5em;
+    color: white;
+    background-color:  #4d3a44;;
+    cursor: pointer; 
+}
+.h2-page-article,
+.p-page-article{
+    margin-bottom: 1rem;
+}
+.img-page-article{
+    margin-left: 2rem;
+}
+.button-delete-article{
+    margin-left: 2rem;
+}
+
+

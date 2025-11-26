@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
+import './ArticlePage.css';
 
 
 function ArticlePage() {
@@ -41,6 +42,7 @@ const { id } = useParams(); // récupère l'id dans l'URL
   function deleteArticle(){
         setLoading(true);
         setError(null);
+        let pre
 
     fetch(`http://localhost:3001/articles/${id}`,{
         method: "DELETE",
@@ -51,6 +53,7 @@ const { id } = useParams(); // récupère l'id dans l'URL
       }
     }) 
      .then(() => {
+      confirm(('Voulez-vous vraiment supprimer l\'article'))
       toast.success("Article supprimé avec succès")
       setTimeout(() => navigate("/"), 200 );
     })
@@ -60,31 +63,34 @@ const { id } = useParams(); // récupère l'id dans l'URL
 
   if (loading) return <p>Chargement</p>;
   
-//  const articleDate = article.createdAt 
-//     ? new Date(article.createdAt) 
-//     : null;
-
  const articleDate = article.updatedAt 
     ? new Date(article.updatedAt) 
     : new Date (article.createdAt);
     
   return (
-  <article>
-      <img src={article.image} alt={article.title} className="img-card"/>
-    <figcaption>
-        <h2 className='h2-card'>{article.title}</h2>
-        <p className='p-card'>{article.content}</p>
-        {/* <p className='p-date'>Publié le :<time dateTime={articleDate.toISOString()}> {articleDate.toLocaleDateString()}</time> </p> */}
-         {(article.createdAt || article.updatedAt) && (
-        <p className='p-date'>
+    <section className="section-page">
+  <article className="article-page">
+    <figure className="figure-page">
+      <img src={article.image} alt={article.title} className="img-page-article"/>
+    <figcaption className="figcaption-page">
+       {(article.createdAt || article.updatedAt) && (
+        <p className='p-page-article'>
             {article.updatedAt ? "Mis à jour le :": "Publié le :"}
            <time dateTime={articleDate.toISOString()}> {articleDate.toLocaleDateString()}</time> 
         </p> )}
+        <h2 className='h2-page-article'>{article.title}</h2>
+        <p className='p-page-article'>{article.content}</p>
+        {/* <p className='p-date'>Publié le :<time dateTime={articleDate.toISOString()}> {articleDate.toLocaleDateString()}</time> </p> */}
+        
         {/* <button aria-label='Like cet article'  className='button-like' onClick={() => setisLiked(!isLiked)}> {isLiked ? "❤" :  "♡"}</button> */}
         </figcaption>
-        <Link to={`/article/${article.id}/edit`}><button>Modifier l'article</button></Link>
-        <button onClick={deleteArticle}>Supprimer l'article</button>
+      </figure>
+
+        <Link to={`/article/${article.id}/edit`}><button className="butto-update-article">Modifier l'article</button></Link>
+        <button className="button-delete-article" onClick={deleteArticle}>Supprimer l'article</button>
+    
   </article>
+  </section>
   );
 
 }

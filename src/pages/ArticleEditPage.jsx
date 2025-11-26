@@ -5,7 +5,7 @@ function ArticleEditPage(){
 
       return (
         <>
-        <h1>Modifier l'article</h1>
+        <h2 className='form-h2'>Modifier l'article</h2>
          {/* <ToastContainer /> */}
         <ArticleEditForm/>
         </>
