@@ -49,9 +49,9 @@ function ArticleList() {
     return (
         // aria-labelledby="article-list-title" se lie au h2 avec le même id pour que le lecteur d’écran annoncent le contenu du h2
         <section className="article-list" aria-labelledby="article-list-title">
-            <hr className="hr" color="#4d3a44" />
-            <h1 className="title-article">Bienvenue sur mon blog</h1>
-            <hr className="hr" color="#4d3a44" />
+            {/* <hr className="hr"/>
+            <h2 className="title-article">Bienvenue sur mon blog</h2>
+            <hr className="hr"/> */}
             <h2 className="h2-article" id="article-list-title">Article populaires</h2>
             {/* RECHERCHE */}
             <form id="form-search" onSubmit={(e) => e.preventDefault()}>

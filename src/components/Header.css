@@ -11,6 +11,9 @@
     justify-content: space-between;
     /* background-color: rgb(24, 23, 23); */
     padding: 1.5em ;
+    margin: 1rem;
+    border: solid, 0.1rem;
+    border-radius: 1rem;
 }
 ul{
     list-style-type: none;

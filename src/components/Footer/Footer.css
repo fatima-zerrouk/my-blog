@@ -1,0 +1,12 @@
+.p-footer{
+    text-align: center;
+}
+
+.footer{
+    padding: 2rem;
+  /* margin-top: 5rem; marche pas */
+    margin: 1rem;
+    border: solid, 0.1rem;
+    border-radius: 1rem;
+
+}

@@ -1,14 +1,15 @@
 import FormNewArticle from '../components/FormNewArticle'
-// import { ToastContainer } from 'react-toastify';
+import Title from "../components/Title/Title";
+
 function NewArticlePage() {
-   
+    Title("Ajouter un article");
+
 
 
     return (
         <>
-          {/* <ToastContainer /> */}
-          <h2 className='form-h2'>Ajouter un article</h2>
-        <FormNewArticle/>
+            <h2 className='form-h2'>Ajouter un article</h2>
+            <FormNewArticle />
         </>
     );
 

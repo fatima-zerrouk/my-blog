@@ -1,3 +1,8 @@
+.hr{
+  border: none;
+  height: .2rem;
+  background-color: #4d3a44;
+}
 .title-article{
     margin: .5em;
     text-align: center;
@@ -14,7 +19,6 @@
     margin: 2em;
 }
 
-/* search bar */
 label.search-label {
     display: none;
 }

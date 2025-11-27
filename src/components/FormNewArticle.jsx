@@ -1,21 +1,22 @@
-import { useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 // import 'react-toastify/dist/ReactToastify.css';
 import './FormNewArticle.css';
 
 function FormNewArticle() {
-    const [newArticle, setNewArticle] = useState({ title: "", content: "",createdAt:new Date().toISOString(), image: "https://placehold.co/200x200"});
+    const [newArticle, setNewArticle] = useState({ title: "", content: "", createdAt: new Date().toISOString(), image: "https://placehold.co/200x200" });
     const [error, setError] = useState(null);
     const [isLoading, setIsLoading] = useState(false);
     const navigate = useNavigate();
 
+
     useEffect(() => {
-        if (error){
+        if (error) {
             toast.error(error);
         }
     }, [error]);
-    
+
     function handleSubmit(event) {
         event.preventDefault();
 
@@ -28,7 +29,7 @@ function FormNewArticle() {
             headers: {
                 "Content-Type": "application/json",
             },
-            
+
         })
             .then((res) => {
                 if (!res.ok) throw new Error("Erreur serveur JSON");
@@ -36,30 +37,30 @@ function FormNewArticle() {
             })
             .then(() => {
                 toast.success("Article ajouté")
-                setTimeout(() => navigate("/"), 200 );
+                setTimeout(() => navigate("/"), 200);
             })
             .catch((err) => setError(err.message))
             .finally(() => setIsLoading(false));
     }
 
 
-    if (isLoading) return <p>Chargement</p>; 
+    if (isLoading) return <p>Chargement</p>;
     return (
-        
+
         <section className="add-section">
             <form className="add-form" onSubmit={handleSubmit}>
                 <label htmlFor="add-title">Titre</label>
-                <input type="text" id="add-title" name="add-title"  required minLength="5"  placeholder="Ajouter un titre" value={newArticle.title} onChange={(event) =>
-                    setNewArticle({ ...newArticle,title: event.target.value})} />
+                <input type="text" id="add-title" name="add-title" required minLength="5" maxLength="50" placeholder="Ajouter un titre" value={newArticle.title} onChange={(event) =>
+                    setNewArticle({ ...newArticle, title: event.target.value })} />
 
                 <label htmlFor="add-content">Contenu</label>
-                <textarea id="add-content" name="add-content" required minLength="5" rows="15" cols="50" placeholder="Ajouter le contenu" value={newArticle.content} onChange={(event) =>
-                    setNewArticle({ ...newArticle, content: event.target.value})} />
+                <textarea id="add-content" name="add-content" required minLength="5" maxLength="1500" rows="15" cols="50" placeholder="Ajouter le contenu" value={newArticle.content} onChange={(event) =>
+                    setNewArticle({ ...newArticle, content: event.target.value })} />
 
                 <label htmlFor="add-upload">Télécharger une image</label>
-                <input type="file" name="add-upload" id="add-upload" />
+                <input type="file" name="add-upload" id="add-upload" accept="image/*" />
 
-                <button className="add-button">Ajouter l'article</button>
+                <button className="add-button" type="submit">Ajouter l'article</button>
             </form>
         </section>
     );
