@@ -10,13 +10,6 @@ function FormNewArticle() {
     const [isLoading, setIsLoading] = useState(false);
     const navigate = useNavigate();
 
-
-    useEffect(() => {
-        if (error) {
-            toast.error(error);
-        }
-    }, [error]);
-
     function handleSubmit(event) {
         event.preventDefault();
 
@@ -29,7 +22,6 @@ function FormNewArticle() {
             headers: {
                 "Content-Type": "application/json",
             },
-
         })
             .then((res) => {
                 if (!res.ok) throw new Error("Erreur serveur JSON");
@@ -42,9 +34,10 @@ function FormNewArticle() {
             .catch((err) => setError(err.message))
             .finally(() => setIsLoading(false));
     }
+    
+    if (isLoading) return <h2 className="err-loading">Chargement de la page...</h2>; 
+    if (error) return <h2 className="err-loading">Erreur : {error}</h2>; 
 
-
-    if (isLoading) return <p>Chargement</p>;
     return (
 
         <section className="add-section">

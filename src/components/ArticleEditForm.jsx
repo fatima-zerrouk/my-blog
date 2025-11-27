@@ -12,12 +12,6 @@ function ArticleEditForm() {
     const [isLoading, setIsLoading] = useState(false);
     const navigate = useNavigate();
 
-    useEffect(() => {
-        if (error) {
-            toast.error(error);
-        }
-    }, [error]);
-
     function handleSubmit(event) {
         event.preventDefault();
 
@@ -35,23 +29,20 @@ function ArticleEditForm() {
             headers: {
                 "Content-Type": "application/json",
             },
-
-        })
+         })
             .then((res) => {
-                if (!res.ok) throw new Error("Erreur serveur");
+                if (!res.ok) throw new Error("Imposible de modifier l'article");
                 return res.json();
             })
             .then(() => {
-                toast.info("Article mis à jour avec succès")
+                toast.success("Article mis à jour avec succès")
                 setTimeout(() => navigate("/"), 200);
             })
             .catch((err) => setError(err.message))
             .finally(() => setIsLoading(false));
     }
-
-
-    if (isLoading) return <p>Chargement</p>;
-
+    if (isLoading) return <h2 className="err-loading">Chargement de la page...</h2>; 
+    if (error) return <h2 className="err-loading">Erreur : {error}</h2>; 
     return (
         <section className="add-section">
 

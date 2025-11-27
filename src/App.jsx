@@ -4,7 +4,7 @@ import ArticlePage from './pages/ArticlePage.jsx';
 import PageNotFound from './pages/PageNotFound.jsx';
 import ArticleEditPage from './pages/ArticleEditPage.jsx'
 // import './App.css'
-import Header from './components/Header.jsx';
+import Header from './components/Header/Header.jsx';
 import Footer from './components/Footer/Footer.jsx'
 import NewArticlePage from './pages/NewArticlePage.jsx';
 

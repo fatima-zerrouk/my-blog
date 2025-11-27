@@ -1,5 +1,5 @@
 // j'importe le jsx
-import ArticleThumb from "./ArticleThumbnail.jsx";
+import ArticleThumb from "../ArticleThumbnail/ArticleThumbnail.jsx";
 import './ArticleList.css'
 import React, { useState } from 'react'; //import des hooks nécessaires
 import { useEffect } from "react";
@@ -26,7 +26,12 @@ function ArticleList() {
     // useEffect s'exécute au chargement du composant et va récupérer les articles
     useEffect(() => {
         fetch('http://localhost:3001/articles')//requête fetch pour récupérer les données
-            .then(reponse => reponse.json()) // la promesse est convertie en json
+            // .then(reponse => reponse.json()) // la promesse est convertie en json
+            
+            .then((reponse) => { 
+                 if (!reponse.ok) throw new Error("Erreur article introuvable");
+                return reponse.json();
+            })
             .then(data => {
                 setArticles(data);// stocke les données dans setArticles
                 setLoading(false);// chargement terminé
@@ -37,8 +42,8 @@ function ArticleList() {
             });
     }, []); // [] = s'exécute une seule fois au montage du composanty
 
-    if (loading) return <p>Chargement de la page </p>; // si c'est encore en train de charger affiche le message
-    if (error) return <p>Erreur : {error}</p>; // si y a une erreur affiche l’erreur
+    if (loading) return <h2 className="err-loading">Chargement de la page...</h2>; // si c'est encore en train de charger affiche le message
+    if (error) return <h2 className="err-loading">Erreur : {error}</h2>; // si y a une erreur affiche l’erreur
 
     const filterResult = filterSearch(articles, searchTerm); //filtre les articles 
 
@@ -49,16 +54,11 @@ function ArticleList() {
     return (
         // aria-labelledby="article-list-title" se lie au h2 avec le même id pour que le lecteur d’écran annoncent le contenu du h2
         <section className="article-list" aria-labelledby="article-list-title">
-            {/* <hr className="hr"/>
-            <h2 className="title-article">Bienvenue sur mon blog</h2>
-            <hr className="hr"/> */}
-            <h2 className="h2-article" id="article-list-title">Article populaires</h2>
-            {/* RECHERCHE */}
+            <h2 className="h2-article" id="article-list-title">Articles populaires</h2>
             <form id="form-search" onSubmit={(e) => e.preventDefault()}>
                 <label htmlFor="search" className="search-label">Recherche</label>
                 <input type="search" name="search" id="search" onChange={handleSearchChange} placeholder="Rechercher un article" aria-label="Barre de recherche" />
             </form>
-            {/* FIN RECHERCHE */}
             <div className="parent" >
                 {filterResult.map((article) => ( // parcourt les articles filtrés et affiche un composant ArticleThumb pour chacun
                     <article key={article.id}>

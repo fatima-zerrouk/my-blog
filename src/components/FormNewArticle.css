@@ -13,6 +13,7 @@ label{
     flex-direction: column;
     width: 50%;
     margin: 2rem;
+    margin-bottom: 8rem;
 }
 #add-title, 
 #add-content {
@@ -30,6 +31,7 @@ label{
     border: .1em solid;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1em;
 }
 .add-button{
     margin-top: 0.5rem;
@@ -37,6 +39,6 @@ label{
     padding: 0.8rem;
     border: .1em solid;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1em;
     cursor: pointer;
 }

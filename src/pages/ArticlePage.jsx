@@ -6,45 +6,36 @@ import { toast, ToastContainer } from "react-toastify";
 import './ArticlePage.css';
 import Title from "../components/Title/Title";
 
-
 function ArticlePage() {
   Title("Article")
-  const { id } = useParams(); // récupère l'id dans l'URL
+  const { id } = useParams();
   const [article, setArticle] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
   // const [isLiked, setisLiked] = useState(false); 
 
   useEffect(() => {
-    if (error) {
-      toast.error(error);
-    }
-  }, [error]);
-
-
-  useEffect(() => {
     fetch(`http://localhost:3001/articles/${id}`)
       .then(res => {
-        if (!res.ok) throw new Error("Article introuvable");
+        if (!res.ok) throw new Error("Erreur article introuvable");
         return res.json();
       })
       .then(data => {
         setArticle(data);
-        setLoading(false);
+        setIsLoading(false);
       })
       .catch(err => {
         setError(err.message);
-        setLoading(false);
+        setIsLoading(false);
       });
   }, [id]);
 
 
-  // DELETE
+  // DELETE button
   function deleteArticle() {
-    setLoading(true);
+    setIsLoading(true);
     setError(null);
-    let pre
 
     fetch(`http://localhost:3001/articles/${id}`, {
       method: "DELETE",
@@ -55,15 +46,15 @@ function ArticlePage() {
         }
       })
       .then(() => {
-        confirm(('Voulez-vous vraiment supprimer l\'article'))
         toast.success("Article supprimé avec succès")
         setTimeout(() => navigate("/"), 200);
       })
       .catch((err) => setError(err.message))
-      .finally(() => setLoading(false));
+      .finally(() => setIsLoading(false));
   }
 
-  if (loading) return <p>Chargement</p>;
+    if (isLoading) return <h2 className="err-loading">Chargement de la page...</h2>; 
+    if (error) return <h2 className="err-loading">Erreur : {error}</h2>; 
 
   const articleDate = article.updatedAt
     ? new Date(article.updatedAt)

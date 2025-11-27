@@ -13,8 +13,10 @@ function Header() {
                     <li><Link to="/" className='a-header'>Accueil</Link></li>
                     <li><Link to="/new/articles" className='a-header'>Ajouter un article</Link></li>
                     <li><Link to="/contact" className='a-header'>Contact</Link></li>
+                    <li><Link to="/contact" className='a-header'>Me connecter</Link></li>
+
                 </ul>
-                <button className='button-header' type='button'>Me connecter</button>
+                {/* <button className='button-header' type='button'>Me connecter</button> */}
 
             </nav>
         </header>

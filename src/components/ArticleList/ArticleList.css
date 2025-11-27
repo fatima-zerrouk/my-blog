@@ -16,7 +16,7 @@
     grid-template-columns: repeat(4, 1fr);
 
     justify-items: center;
-    margin: 2em;
+    margin: 5rem;
 }
 
 label.search-label {
@@ -36,7 +36,7 @@ label.search-label {
     width: 50%;
     border: solid;
     border-radius: 2em;
-
+    margin-bottom: 2rem;
 }
 #form-search{
     display: flex;
