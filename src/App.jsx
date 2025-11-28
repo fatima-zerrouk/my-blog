@@ -7,12 +7,12 @@ import ArticleEditPage from './pages/ArticleEditPage.jsx'
 import Header from './components/Header/Header.jsx';
 import Footer from './components/Footer/Footer.jsx'
 import NewArticlePage from './pages/NewArticlePage.jsx';
-
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
+  
   return (
     <>
       <Header />
@@ -22,7 +22,7 @@ function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='/new/articles' element={<NewArticlePage />} />
         <Route path='/article/:id/edit' element={<ArticleEditPage />} />
-        <Route path='/article/:id' element={<ArticlePage />} />
+        <Route path='/article/:id' element={<ArticlePage />} />  
         <Route path='*' element={<PageNotFound />} />
       </Routes>
       </main>

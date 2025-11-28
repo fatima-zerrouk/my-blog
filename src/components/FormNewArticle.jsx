@@ -53,6 +53,7 @@ function FormNewArticle() {
                 <input type="file" name="add-upload" id="add-upload" accept="image/*" />
 
                 <button className="add-button" type="submit">Ajouter l'article</button>
+                <button className="add-button-null" onClick={()=> navigate("/")}>Annuler</button>
             </form>
         </section>
     );

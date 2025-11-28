@@ -33,6 +33,9 @@ function ArticlePage() {
 
   // DELETE button
   function deleteArticle() {
+    const confirmDelete = window.confirm("Vous-voulez vraiment supprimer cet article ?");
+    if (!confirmDelete) return;
+    
     setIsLoading(true);
     setError(null);
 
@@ -63,7 +66,7 @@ function ArticlePage() {
     <section className="section-page">
       <article className="article-page">
         <figure className="figure-page">
-          <img src={article.image} alt={article.title} className="img-page-article" width="200" height="200" />
+          <img src={article.image} alt={article.title}  className="img-page-article" width="200" height="200" />
           <figcaption className="figcaption-page">
             {(article.createdAt || article.updatedAt) && (
               <p className='p-page-article'>
