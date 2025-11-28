@@ -36,7 +36,7 @@ function ArticleEditForm() {
             })
             .then(() => {
                 toast.success("Article mis à jour avec succès")
-                setTimeout(() => navigate("/"), 200);
+                setTimeout(() => navigate(`/article/${id}`), 0);
             })
             .catch((err) => setError(err.message))
             .finally(() => setIsLoading(false));

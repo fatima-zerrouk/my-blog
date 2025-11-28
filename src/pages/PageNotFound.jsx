@@ -4,9 +4,9 @@ function PageNotFound() {
   Title("Page non trouvée");
 
   return (
-    <>
-      <h2 className="error-404">404 Error Error Error page not found 😱💀☠️</h2>
-    </>
+    <section>
+      <h2 className="error-404">404 Error Error Error page not found</h2>
+    </section>
   );
 
 }

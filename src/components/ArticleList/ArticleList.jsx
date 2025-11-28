@@ -54,11 +54,11 @@ function ArticleList() {
     return (
         // aria-labelledby="article-list-title" se lie au h2 avec le même id pour que le lecteur d’écran annoncent le contenu du h2
         <section className="article-list" aria-labelledby="article-list-title">
-            <h2 className="h2-article" id="article-list-title">Articles populaires</h2>
             <form id="form-search" onSubmit={(e) => e.preventDefault()}>
                 <label htmlFor="search" className="search-label">Recherche</label>
                 <input type="search" name="search" id="search" onChange={handleSearchChange} placeholder="Rechercher un article" aria-label="Barre de recherche" />
             </form>
+            <h2 className="h2-article" id="article-list-title">Articles populaires</h2>
             <div className="parent" >
                 {filterResult.map((article) => ( // parcourt les articles filtrés et affiche un composant ArticleThumb pour chacun
                     <article key={article.id}>

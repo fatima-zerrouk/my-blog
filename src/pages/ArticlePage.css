@@ -1,39 +1,68 @@
-.section-page{
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    display: flex;
-    justify-content: center;
+.section-page {
+  margin: 5rem ;
+  display: flex;
+  justify-content: center;
 }
-.article-page{
-    border: .2em solid, #4d3a44;
-    margin: 2rem;
-    padding: 2rem;
-    width: 100%;
+.article-page {
+  border: 0.2em solid #4d3a44;
+  margin: 2rem;
+  padding: 2rem;
+  max-width: 800px;  
+  width: 100%;
+  border-radius: 0.5em;
 }
-.figure-page{
-    display: flex;
-    align-items: center;
-    gap: 5rem;
+.figure-page {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
-.butto-update-article,
-.button-delete-article{
-    margin-top: 2rem;
-    border: none;
-    padding: .7em;
-    border-radius: .5em;
-    color: white;
-    background-color:  #4d3a44;;
-    cursor: pointer; 
+.img-page-article {
+  border-radius: 0.5em;
 }
 .h2-page-article,
-.p-page-article{
-    margin-bottom: 1rem;
+.p-page-article {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  word-break: break-all;
 }
-.img-page-article{
-    margin-left: 2rem;
+.buttons-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
-.button-delete-article{
-    margin-left: 2rem;
+.button-update-article,
+.button-delete-article {
+  border: none;
+  padding: 0.7em 1.2em;
+  border-radius: 0.5em;
+  color: white;
+  background-color: #4d3a44;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+.button-delete-article {
+    background-color: rgb(135, 59, 59);
+}
+.button-update-article:hover{
+  background-color: #5c4552;
+}
+.button-delete-article:hover {
+    background-color: rgb(207, 88, 88);
 }
 
+@media (max-width: 700px) {
+  .figure-page {
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttons-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .button-update-article{
+    width: 13rem;
+  }
+}
 

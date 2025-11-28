@@ -8,24 +8,27 @@
     margin: 10rem;
     text-align: center;
 }
-
+.error-404{  
+  text-align: center;
+  margin: 5rem;
+}
+main {
+    min-height: 100vh;
+}
 /* Styles selon le thème dark ou light*/
 @media (prefers-color-scheme: dark) {
   * {
-    background-color: #372626;
-    color: #e7d1c9;
+    background-color: #101010;
+    color: #F7F7F7;
   }
 }
 
 @media (prefers-color-scheme: light) {
   * {
-    background-color: #e7d1c9;
-    color: #372626;
+    background-color:#A39A9E;
+    color: #101010;
+
   }
 }
-.error-404{
-  margin-top: 15%;
-  margin-bottom: 15%;
-  text-align: center;
-}
+
 

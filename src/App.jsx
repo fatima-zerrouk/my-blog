@@ -17,6 +17,7 @@ function App() {
     <>
       <Header />
       <ToastContainer />
+      <main>
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/new/articles' element={<NewArticlePage />} />
@@ -24,6 +25,7 @@ function App() {
         <Route path='/article/:id' element={<ArticlePage />} />
         <Route path='*' element={<PageNotFound />} />
       </Routes>
+      </main>
       <Footer />
     </>
   );

@@ -1,46 +1,27 @@
-.hr{
-  border: none;
-  height: .2rem;
-  background-color: #4d3a44;
-}
-.title-article{
-    margin: .5em;
+.h2-article {
+    margin: 3rem;
     text-align: center;
 }
-.h2-article{
-    margin: 3em;
-    margin-left: 2.5em;
-}
-.parent { 
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-
-    justify-items: center;
-    margin: 5rem;
-}
-
-label.search-label {
-    display: none;
-}
-.search-button{
-    border: none;
-    padding: .7em;
-    border-radius: .5em;
-    color: white;
-    background-color:  #74565b;;
-    cursor: pointer; 
-}
-
 #search{
     padding: 1em;
     width: 50%;
-    border: solid;
+    border: solid .2em #4d3a44;
     border-radius: 2em;
-    margin-bottom: 2rem;
+    margin-top: 5rem;
 }
 #form-search{
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 5em;
+}
+label.search-label {
+    display: none; 
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    margin-bottom: 6rem;
 }

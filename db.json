@@ -1,25 +1,25 @@
 {
   "articles": [
     {
-      "title": "Titre 1",
-      "content": "Voici le contenu de l'article.",
+      "title": "1 Lorem Ipsum",
+      "content": "Abusus enim multitudine hominum, quam tranquillis in rebus diutius rexit, ex agrestibus habitaculis urbes construxit multis opibus firmas et viribus, quarum ad praesens pleraeque licet Graecis nominibus appellentur, quae isdem ad arbitrium inposita sunt conditoris, primigenia tamen nomina non amittunt, quae eis Assyria lingua institutores veteres indiderunt.",
       "createdAt": "2025-11-25T14:46:49.509Z",
-      "image": "https://placehold.co/200x200",
+      "image": "/img/img-tableau-1.webp",
       "updatedAt": "2025-11-25T14:46:54.533Z",
       "id": "1"
     },
     {
-      "title": "Titre 2",
-      "content": "Voici le contenu de l'article.",
+      "title": "2 Lorem Ipsum",
+      "content": "Abusus enim multitudine hominum, quam tranquillis in rebus diutius rexit, ex agrestibus habitaculis urbes construxit multis opibus firmas et viribus, quarum ad praesens pleraeque licet Graecis nominibus appellentur, quae isdem ad arbitrium inposita sunt conditoris, primigenia tamen nomina non amittunt, quae eis Assyria lingua institutores veteres indiderunt.",
       "createdAt": "2025-11-21T10:36:11.679Z",
-      "image": "https://placehold.co/200x200",
+      "image": "/img/img-tableau-2.webp",
       "id": "2"
     },
     {
       "id": "3",
-      "title": "Titre 3",
-      "content": "Voici le contenu de l'article.",
-      "image": "https://placehold.co/200x200",
+      "title": "3 Lorem Ipsum",
+      "content": "Abusus enim multitudine hominum, quam tranquillis in rebus diutius rexit, ex agrestibus habitaculis urbes construxit multis opibus firmas et viribus, quarum ad praesens pleraeque licet Graecis nominibus appellentur, quae isdem ad arbitrium inposita sunt conditoris, primigenia tamen nomina non amittunt, quae eis Assyria lingua institutores veteres indiderunt.",
+      "image": "/img/img-tableau-4.webp",
       "createdAt": "2025-11-17T00:00:00.000Z",
       "isPublished": false,
       "likeCount": 0,
@@ -27,9 +27,9 @@
     },
     {
       "id": "4",
-      "title": "Titre 4",
-      "content": "Voici le contenu de l'article.",
-      "image": "https://placehold.co/200x200",
+      "title": "4 Lorem Ipsum",
+      "content": "Abusus enim multitudine hominum, quam tranquillis in rebus diutius rexit, ex agrestibus habitaculis urbes construxit multis opibus firmas et viribus, quarum ad praesens pleraeque licet Graecis nominibus appellentur, quae isdem ad arbitrium inposita sunt conditoris, primigenia tamen nomina non amittunt, quae eis Assyria lingua institutores veteres indiderunt.",
+      "image": "/img/img-tableau-5.webp",
       "createdAt": "2025-11-17T00:00:00.000Z",
       "isPublished": false,
       "likeCount": 0,
@@ -37,9 +37,9 @@
     },
     {
       "id": "5",
-      "title": "Titre 5",
-      "content": "Voici le contenu de l'article.",
-      "image": "https://placehold.co/200x200",
+      "title": "5 Lorem Ipsum",
+      "content": "Abusus enim multitudine hominum, quam tranquillis in rebus diutius rexit, ex agrestibus habitaculis urbes construxit multis opibus firmas et viribus, quarum ad praesens pleraeque licet Graecis nominibus appellentur, quae isdem ad arbitrium inposita sunt conditoris, primigenia tamen nomina non amittunt, quae eis Assyria lingua institutores veteres indiderunt.",
+      "image": "/img/img-tableau-6.webp",
       "createdAt": "2025-11-17T00:00:00.000Z",
       "isPublished": false,
       "likeCount": 0,
@@ -47,39 +47,47 @@
     },
     {
       "id": "6",
-      "title": "Titre 6",
-      "content": "Voici le contenu de l'article.",
-      "image": "https://placehold.co/200x200",
+      "title": "6 Lorem Ipsum",
+      "content": "Abusus enim multitudine hominum, quam tranquillis in rebus diutius rexit, ex agrestibus habitaculis urbes construxit multis opibus firmas et viribus, quarum ad praesens pleraeque licet Graecis nominibus appellentur, quae isdem ad arbitrium inposita sunt conditoris, primigenia tamen nomina non amittunt, quae eis Assyria lingua institutores veteres indiderunt.",
+      "image": "/img/img-tableau-7.webp",
       "createdAt": "2025-11-17T00:00:00.000Z",
       "isPublished": false,
       "likeCount": 0,
       "categoryName": "React"
     },
     {
-      "title": "Titre 2",
-      "content": "Voici le contenu de l'article.",
+      "title": "7 Lorem Ipsum",
+      "content": "Abusus enim multitudine hominum, quam tranquillis in rebus diutius rexit, ex agrestibus habitaculis urbes construxit multis opibus firmas et viribus, quarum ad praesens pleraeque licet Graecis nominibus appellentur, quae isdem ad arbitrium inposita sunt conditoris, primigenia tamen nomina non amittunt, quae eis Assyria lingua institutores veteres indiderunt.",
       "createdAt": "2025-11-25T14:42:33.779Z",
-      "image": "https://placehold.co/200x200",
+      "image": "/img/img-tableau-8.webp",
       "updatedAt": "2025-11-25T14:42:55.858Z",
       "id": "7"
     },
     {
       "id": "8",
-      "title": "Titre 8",
-      "content": "Voici le contenu de l'article.",
-      "image": "https://placehold.co/200x200",
+      "title": "8 Lorem Ipsum",
+      "content": "Abusus enim multitudine hominum, quam tranquillis in rebus diutius rexit, ex agrestibus habitaculis urbes construxit multis opibus firmas et viribus, quarum ad praesens pleraeque licet Graecis nominibus appellentur, quae isdem ad arbitrium inposita sunt conditoris, primigenia tamen nomina non amittunt, quae eis Assyria lingua institutores veteres indiderunt.",
+      "image": "/img/img-tableau-9.webp",
       "createdAt": "2025-11-17T00:00:00.000Z",
       "isPublished": false,
       "likeCount": 0,
       "categoryName": "React"
     },
     {
-      "title": "msnlvdvknq ks,dvw",
-      "content": "JDNIDQJSCNJSHDBCHSD",
-      "createdAt": "2025-11-27T13:58:14.293Z",
+      "title": "ssssssssssssssssssssssssssssssssssssssssss",
+      "content": "Abusus enim multitudine hominum, quam tranquillis in rebus diutius rexit, ex agrestibus habitaculis urbes construxit multis opibus firmas et viribus, quarum ad praesens pleraeque licet Graecis nominibus appellentur, quae isdem ad arbitrium inposita sunt conditoris, primigenia tamen nomina non amittunt, quae eis Assyria lingua institutores veteres indiderunt.",
+      "createdAt": "2025-11-28T01:03:37.023Z",
       "image": "https://placehold.co/200x200",
-      "updatedAt": "2025-11-27T13:58:29.040Z",
-      "id": "c03a"
+      "updatedAt": "2025-11-28T01:03:42.966Z",
+      "id": "eb3f"
+    },
+    {
+      "title": "2 NEW article ",
+      "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "createdAt": "2025-11-27T23:37:56.273Z",
+      "image": "https://placehold.co/200x200",
+      "updatedAt": "2025-11-27T23:38:07.982Z",
+      "id": "ced3"
     }
   ]
 }

@@ -13,7 +13,6 @@ function ArticlePage() {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
   const navigate = useNavigate();
-  // const [isLiked, setisLiked] = useState(false); 
 
   useEffect(() => {
     fetch(`http://localhost:3001/articles/${id}`)
@@ -53,8 +52,8 @@ function ArticlePage() {
       .finally(() => setIsLoading(false));
   }
 
-    if (isLoading) return <h2 className="err-loading">Chargement de la page...</h2>; 
-    if (error) return <h2 className="err-loading">Erreur : {error}</h2>; 
+  if (isLoading) return <h2 className="err-loading">Chargement de la page...</h2>;
+  if (error) return <h2 className="err-loading">Erreur : {error}</h2>;
 
   const articleDate = article.updatedAt
     ? new Date(article.updatedAt)
@@ -64,7 +63,7 @@ function ArticlePage() {
     <section className="section-page">
       <article className="article-page">
         <figure className="figure-page">
-          <img src={article.image} alt={article.title} className="img-page-article" />
+          <img src={article.image} alt={article.title} className="img-page-article" width="200" height="200" />
           <figcaption className="figcaption-page">
             {(article.createdAt || article.updatedAt) && (
               <p className='p-page-article'>
@@ -73,15 +72,13 @@ function ArticlePage() {
               </p>)}
             <h2 className='h2-page-article'>{article.title}</h2>
             <p className='p-page-article'>{article.content}</p>
-            {/* <p className='p-date'>Publié le :<time dateTime={articleDate.toISOString()}> {articleDate.toLocaleDateString()}</time> </p> */}
-
-            {/* <button aria-label='Like cet article'  className='button-like' onClick={() => setisLiked(!isLiked)}> {isLiked ? "❤" :  "♡"}</button> */}
           </figcaption>
         </figure>
-
-        <Link to={`/article/${article.id}/edit`}><button className="butto-update-article">Modifier l'article</button></Link>
-        <button className="button-delete-article" onClick={deleteArticle}>Supprimer l'article</button>
-
+        <div className="buttons-container">
+          <Link to={`/article/${article.id}/edit`}><button className="button-update-article">Modifier l'article</button>
+          </Link>
+          <button className="button-delete-article" onClick={deleteArticle}>Supprimer l'article</button>
+        </div>
       </article>
     </section>
   );

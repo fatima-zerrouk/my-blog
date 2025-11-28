@@ -7,10 +7,10 @@ function NewArticlePage() {
 
 
     return (
-        <>
+        <section className='new-article'>
             <h2 className='form-h2'>Ajouter un article</h2>
             <FormNewArticle />
-        </>
+        </section>
     );
 
 }

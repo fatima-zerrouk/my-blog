@@ -6,6 +6,13 @@
     border-radius: .5em;
     margin-bottom: 4em;
     flex-direction: column;
+       
+}
+.parent article{
+    transition: transform 0.4s ease-in-out;
+}
+.parent article:hover {
+    transform: translateY(20px);
 }
 .img-card{
     border-radius: .2em;

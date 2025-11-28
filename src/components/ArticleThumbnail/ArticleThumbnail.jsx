@@ -15,7 +15,7 @@ function ArticleThumb({ article }) {
     return (
         <figure className="section-card">
 
-            <img src={article.image} alt={article.title} className="img-card" />
+            <img src={article.image} alt={article.image} className="img-card" width="200" height="200" />
             <figcaption>
                 <Link to={`/article/${article.id}`}>
                     <h2 className='h2-card'>{article.title}</h2>

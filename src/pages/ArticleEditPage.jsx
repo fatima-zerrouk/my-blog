@@ -5,10 +5,10 @@ function ArticleEditPage() {
   Title("Modifier un article");
 
   return (
-    <>
+    <section className='new-article'>
       <h2 className='form-h2'>Modifier l'article</h2>
       <ArticleEditForm />
-    </>
+    </section>
   );
 
 

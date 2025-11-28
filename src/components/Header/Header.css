@@ -1,90 +1,46 @@
-.all-header{
+.all-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5em ;
+    padding: 1rem 1.5rem;
     margin: 1rem;
-    border: solid, 0.1rem;
+    border: solid .2em #4d3a44;
     border-radius: 1rem;
 }
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.ul-header{
+.ul-header {
     display: flex;
     gap: 1em;
+    list-style: none;
 }
-.a-header{
-    color: black;
+.a-header {
+    background-color: #4d3a44;
+    color: #fff;
+    padding: 0.8em;
+    border-radius: 0.5em;
+    text-decoration: none;
     font-size: small;
-    background-color:#4d3a44 ;
-    padding: .8em;
-    border-radius: .5em;
-    color: white;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
 }
-.a-header:hover{
+.a-header:hover {
     background-color: #74565b;
-    transition: ease-in-out 0.4s;
-}
-.nav-header{
-    display: flex;
-    align-items: center;
-    gap: 1em;
-}
-.button-header{
-    border: none;
-    padding: .7em;
-    border-radius: .5em;
-    color: white;
-    background-color:  #4d3a44;;
-    cursor: pointer; 
-}
-.button-header:hover{
-    background-color: #694c51;
-    transition: ease-in-out 0.4s;
+    transition: background-color 0.3s;
 }
 
-/* @media screen and (min-width: 768px) and (max-width: 992px){
-    .all-header{
-        width: 500px;
-        background-color: aqua;
-    }
-    
-} */
-
-@media (max-width: 600px) {
+/* Mobile uniquement (exclut les tablettes) */
+@media (max-width: 480px) { 
     .all-header {
-        flex-direction: column;        /* Le header devient vertical */
-        align-items: center;           /* On centre tout */
+        flex-direction: column;
+        align-items: stretch;
         gap: 1rem;
-        padding: 1rem;
-    }
-    .title-header {
-        font-size: 1.5rem;             /* Titre plus petit */
-        text-align: center;
-    }
-    .nav-header {
-        flex-direction: column;        /* Menu + bouton en colonne */
-        gap: 0.8rem;
-        width: 100%;
     }
     .ul-header {
-        flex-direction: column;        /* Liens en colonne */
-        gap: 0.5rem;
-        width: 100%;
-        align-items: center;
+        flex-direction: column;
+        gap: 1em;
     }
     .a-header {
-        display: block;
-        width: 100%;                    /* Liens prennent la largeur */
+        padding: 0.6em;
         text-align: center;
-        padding: 0.8em;
     }
-     /* Bouton large */
-    /* .button-header {
-        width: 100%;                   
-        padding: 0.8em;
-    } */
 }
