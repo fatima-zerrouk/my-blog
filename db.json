@@ -82,21 +82,6 @@
       "isPublished": false,
       "likeCount": 0,
       "categoryName": "React"
-    },
-    {
-      "title": "1 NEW article ",
-      "content": "1 NEW article ",
-      "createdAt": "2025-11-28T09:37:31.218Z",
-      "image": "https://placehold.co/200x200",
-      "updatedAt": "2025-11-28T09:37:39.079Z",
-      "id": "f70e"
-    },
-    {
-      "id": "7636",
-      "title": "2 NEW article ",
-      "content": "2 NEW article ",
-      "createdAt": "2025-11-28T09:39:21.672Z",
-      "image": "https://placehold.co/200x200"
     }
   ]
 }

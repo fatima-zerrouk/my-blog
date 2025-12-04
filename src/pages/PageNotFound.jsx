@@ -5,7 +5,7 @@ function PageNotFound() {
 
   return (
     <section>
-      <h2 className="error-404">404 Error Error Error page not found</h2>
+      <h2 className="error-404">Erreur 404 page introuvable</h2>
     </section>
   );
 
